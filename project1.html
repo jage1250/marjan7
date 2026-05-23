@@ -3,23 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Website Biografi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BIOGRAFI - Radithya Javas Nararya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            padding-top: 50px;
+        }
+        .biografi-title {
+            color: #1a2a6c;
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .col {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            color: white;
+            transition: transform 0.2s;
+        }
+        .col:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Project 1: Website Biografi</h1>
-        <h2>Detail Pengembangan Portofolio Diri</h2>
-    </header>
-    <main class="container">
-        <div class="project-page-card">
-            <h3>Deskripsi Project</h3>
-            <p>Project ini berfokus pada pembuatan struktur data teks dasar untuk menampilkan profil riwayat hidup secara informatif. Dikembangkan menggunakan elemen semantik HTML dasar untuk melatih kerapian penulisan sintaks pembuka dan penutup kontainer dokumen.</p>
-            <p style="margin-top: 20px;"><a href="index.html" class="btn btn-secondary">&larr; Kembali ke Halaman Utama</a></p>
+    
+    <h1 class="text-center biografi-title">BIOGRAFI</h1>
+    
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col bg-primary p-4 m-4">
+                <h4 class="border-bottom pb-2 mb-3">Data Diri</h4>
+                <p><strong>Nama:</strong> Radithya Javas Nararya</p>
+                <p><strong>Panggilan:</strong> Jage</p>
+                <p><strong>Tanggal Lahir:</strong> 30 April 2009</p>
+            </div>
+            
+            <div class="col bg-primary p-4 m-4">
+                <h4 class="border-bottom pb-2 mb-3">Kepribadian</h4>
+                <p>HEBOH</p>
+                <p>SERU</p>
+                <p>AKTIF</p>
+            </div>
+            
+            <div class="col bg-primary p-4 m-4">
+                <h4 class="border-bottom pb-2 mb-3">Hobi</h4>
+                <p>Main Gitar</p>
+                <p>Baca Novel</p>
+                <p>Fotografi</p>
+            </div>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Radithya Javas Nararya - Kolese Kanisius.</p>
-    </footer>
+
+        <div class="btn-group mt-4" role="group" aria-label="Navigasi Biografi">
+            <button type="button" class="btn btn-primary" onclick="alert('Terima kasih atas Like-nya!')">Like</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="alert('Fitur Post belum tersedia.')">Post</button>
+            <a href="index.html" class="btn btn-dark">Back</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
