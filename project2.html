@@ -1,25 +1,167 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Card Game</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Character Cards - Project 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .progress {
+            height: 20px;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Project 2: Card Game</h1>
-        <h2>Aplikasi Logika Interaktif Berbasis JavaScript</h2>
-    </header>
-    <main class="container">
-        <div class="project-page-card">
-            <h3>Deskripsi Project</h3>
-            <p>Sebuah mini game berbasis kartu digital interaktif yang dirancang untuk menguji fungsionalitas logika percabangan kondisi, manipulasi class CSS, serta penanganan rintisan penangkap aktivitas klik (Event Listener) menggunakan skrip JavaScript.</p>
-            <p style="margin-top: 20px;"><a href="index.html" class="btn btn-secondary">&larr; Kembali ke Halaman Utama</a></p>
+<body class="bg-light">
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">Budak Noel</h1>
+        <hr class="w-25 mx-auto">
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card shadow h-100">
+                <div class="card-header text-center fw-bold bg-dark text-white">
+                    Tioyahud
+                </div>
+                <img src="tioyahud.jpeg" class="img-thumbnail" alt="Foto Karakter">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="card-text">Anomali Yahudi asli Lampung yang hobinya mencuri uang dan judi online sampai mampus.</p>
+                        <p class="text-muted small">Unique passive: Menerima bonus 10% gold dan chance mencuri item lawan.</p>
+                    </div>
+                    <div>
+                        <label class="fw-semibold">Strength</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                        </div>
+
+                        <label class="fw-semibold">Health</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 67%">67%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Radithya Javas Nararya - Kolese Kanisius.</p>
-    </footer>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card shadow h-100">
+                <div class="card-header text-center fw-bold bg-dark text-white">
+                    Lintaktak
+                </div>
+                <img src="ebetblek.jpeg" class="img-thumbnail" alt="Foto Karakter">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="card-text">Mahkluk hasil limbah pabrik sarung dengan skill taunt mengerikan, namun rupanya yang mengerikan membuatnya sering ditumbalkan.</p>
+                        <p class="text-muted small">Unique passive: Memakan 1 hp setiap menjalankan aksi.</p>
+                    </div>
+                    <div>
+                        <label class="fw-semibold">Strength</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 10%">10%</div>
+                        </div>
+
+                        <label class="fw-semibold">Health</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 100%">???%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card shadow h-100">
+                <div class="card-header text-center fw-bold bg-dark text-white">
+                    Repartitur
+                </div>
+                <img src="rean.jpeg" class="img-thumbnail" alt="Foto Karakter">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="card-text">Prajurit berkulit hitam pertama yang terdampar di dataran Kroasia, pria ini terkenal bijak, baik hati, dan pantang menyerah.</p>
+                        <p class="text-muted small">Unique passive: Mendapat tambahan 1 strength setiap 1 turn dilewati. Effect bisa distack hingga 10x.</p>
+                    </div>
+                    <div>
+                        <label class="fw-semibold">Strength</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 80%">80%</div>
+                        </div>
+
+                        <label class="fw-semibold">Health</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 80%">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card shadow h-100">
+                <div class="card-header text-center fw-bold bg-dark text-white">
+                    Solicin
+                </div>
+                <img src="awas licin.jpeg" class="img-thumbnail" alt="Foto Karakter">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="card-text">Badut pribadi tuan putri yang dibuang dari kerajaan karena memiliki kutukan membuat lantai licin dalam radius 10 meter.</p>
+                        <p class="text-muted small">Unique passive: Jika berada di area kerajaan akan memasuki drunk state yang membuat kartu ini bergerak sesuai kemauannya dan memberikan jokes.</p>
+                    </div>
+                    <div>
+                        <label class="fw-semibold">Strength</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 69%">69%</div>
+                        </div>
+
+                        <label class="fw-semibold">Health</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 68%">68%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card shadow h-100">
+                <div class="card-header text-center fw-bold bg-dark text-white">
+                    BUNBUNABUN
+                </div>
+                <img src="aboen.jpeg" class="img-thumbnail" alt="Foto Karakter">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="card-text">Waduh, ini mah misterius sekali.</p>
+                        <p class="text-muted small">Unique passive: Auto win jika berhasil mengumpulkan 5 jari dalam 1 pertempuran.</p>
+                    </div>
+                    <div>
+                        <label class="fw-semibold">Strength</label>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" style="width: 100%">Error</div>
+                        </div>
+
+                        <label class="fw-semibold">Health</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 100%">?????????</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <div class="text-center mt-5">
+        <a href="../index.html" class="btn btn-dark btn-lg px-5 shadow-sm">&larr; Kembali ke Halaman Utama</a>
+    </div>
+
+</div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
